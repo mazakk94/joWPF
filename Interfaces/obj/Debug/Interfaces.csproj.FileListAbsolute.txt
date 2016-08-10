@@ -1,0 +1,8 @@
+c:\Users\Diego\documents\visual studio 2013\Projects\CSharp\wpf\MVVM\Interfaces\bin\Debug\Interfaces.dll
+c:\Users\Diego\documents\visual studio 2013\Projects\CSharp\wpf\MVVM\Interfaces\bin\Debug\Interfaces.pdb
+c:\Users\Diego\documents\visual studio 2013\Projects\CSharp\wpf\MVVM\Interfaces\obj\Debug\Interfaces.dll
+c:\Users\Diego\documents\visual studio 2013\Projects\CSharp\wpf\MVVM\Interfaces\obj\Debug\Interfaces.pdb
+C:\Users\student\Downloads\MVVM\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\student\Downloads\MVVM\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\student\Downloads\MVVM\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\student\Downloads\MVVM\Interfaces\obj\Debug\Interfaces.pdb
