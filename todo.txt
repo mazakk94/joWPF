@@ -1,0 +1,3 @@
+[ ] edytor testów
+
+[ ] u¿ytkownik testów
