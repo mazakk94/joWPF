@@ -70,8 +70,8 @@ namespace MVVM
         {
             ICar car = _dao.CreateNewCar();
             CarViewModel cvm = new CarViewModel(car);
-            //_dao.AddCar(car);
-            //Cars.Add(cvm);
+            _dao.AddCar(car);
+            Cars.Add(cvm);
             EditedCar = cvm;
         }
 
