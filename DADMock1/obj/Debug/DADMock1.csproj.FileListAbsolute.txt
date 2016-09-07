@@ -12,3 +12,10 @@ C:\Users\student\Downloads\MVVM\DADMock1\bin\Debug\Interfaces.pdb
 C:\Users\student\Downloads\MVVM\DADMock1\obj\Debug\DADMock1.csprojResolveAssemblyReference.cache
 C:\Users\student\Downloads\MVVM\DADMock1\obj\Debug\DADMock1.dll
 C:\Users\student\Downloads\MVVM\DADMock1\obj\Debug\DADMock1.pdb
+C:\Users\Mazi\Documents\Visual Studio 2013\siszarpProjects\joWpf\DADMock1\bin\Debug\DADMock1.dll
+C:\Users\Mazi\Documents\Visual Studio 2013\siszarpProjects\joWpf\DADMock1\bin\Debug\DADMock1.pdb
+C:\Users\Mazi\Documents\Visual Studio 2013\siszarpProjects\joWpf\DADMock1\bin\Debug\Interfaces.dll
+C:\Users\Mazi\Documents\Visual Studio 2013\siszarpProjects\joWpf\DADMock1\bin\Debug\Interfaces.pdb
+C:\Users\Mazi\Documents\Visual Studio 2013\siszarpProjects\joWpf\DADMock1\obj\Debug\DADMock1.csprojResolveAssemblyReference.cache
+C:\Users\Mazi\Documents\Visual Studio 2013\siszarpProjects\joWpf\DADMock1\obj\Debug\DADMock1.dll
+C:\Users\Mazi\Documents\Visual Studio 2013\siszarpProjects\joWpf\DADMock1\obj\Debug\DADMock1.pdb
