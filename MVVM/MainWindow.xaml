@@ -93,7 +93,7 @@
             <TextBox Text="{Binding FilterData,Mode=TwoWay}" MinWidth="50"/>
             <Button Command="{Binding GroupCarsCommand}">Group</Button>
         </StackPanel>
-        <ListBox Name="lstBox" ItemsSource="{Binding Cars}" SelectionChanged="lstBox_SelectionChanged" Height="299" VerticalAlignment="Bottom">
+        <ListBox Name="lstBox" ItemsSource="{Binding Cars}">
             <ListBox.GroupStyle>
                 <GroupStyle>
                     <GroupStyle.HeaderTemplate>
