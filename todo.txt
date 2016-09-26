@@ -1,3 +1,4 @@
+
 [ ] przejœcie po zalogowaniu do odpowiedniego okna:
 	[ ] edytor testów
 		- Podgl¹d (Historia, statystyki)

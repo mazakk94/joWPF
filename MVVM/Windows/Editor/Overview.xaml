@@ -1,8 +1,13 @@
 ﻿<Window x:Class="MVVM.Windows.Editor.Overview"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:MVVM"
         Title="Overview" Height="480" Width="640">
-    <DockPanel LastChildFill=" True">
+    <Window.DataContext>
+        <local:CarListViewModel/>
+    </Window.DataContext>
+    
+    <DockPanel> <!--LastChildFill=" True"-->
         <Grid DockPanel.Dock="Top">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.5*" ></ColumnDefinition>
@@ -10,13 +15,32 @@
                 <ColumnDefinition Width="0.5*" ></ColumnDefinition>                
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition ></RowDefinition>
+                <RowDefinition Height="0.5*" ></RowDefinition>
                 <RowDefinition ></RowDefinition>
                 <RowDefinition ></RowDefinition>
                 <RowDefinition ></RowDefinition>
             </Grid.RowDefinitions>
-
-            
+            <ListBox Name="lstBox" ItemsSource="{Binding Cars}" Grid.Row="0" Grid.Column="1" >
+                <ListBox.GroupStyle>
+                    <GroupStyle>
+                        <GroupStyle.HeaderTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=Name}" FontWeight="Bold"
+                                       Foreground="White" Background="Black" Margin="2"/>
+                            </DataTemplate>
+                        </GroupStyle.HeaderTemplate>
+                    </GroupStyle>
+                </ListBox.GroupStyle>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="{Binding CarID}" />                            
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Label  Grid.Row="0" Grid.Column="1"  Content="{Binding CarID}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <!--Label Grid.Row="0" Grid.Column="1"  Content="{Binding Username}" HorizontalAlignment="Center" VerticalAlignment="Center"/-->
         </Grid>
     </DockPanel>
 </Window>

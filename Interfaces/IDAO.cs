@@ -11,6 +11,9 @@ namespace Interfaces
         IEnumerable<IProducer> GetAllProducers();
         IEnumerable<ICar> GettAllCars();
 
+        //IEnumerable<IUser> GetAllUsers();
+        //IUser CreateNewUser();
+
         ICar CreateNewCar();
         void AddCar(ICar car);
 
