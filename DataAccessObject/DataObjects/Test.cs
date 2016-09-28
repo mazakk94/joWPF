@@ -1,0 +1,42 @@
+﻿using Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataAccessObject.DataObjects
+{
+    class Test : ITest
+    {
+        public string Name
+        {
+            get;
+            set;
+        }
+
+        public TimeSpan Length
+        {
+            get;
+            set;
+        }
+
+        public int MaximumPoints
+        {
+            get;
+            set;
+        }
+
+        public List<IQuestion> Questions
+        {
+            get;
+            set;
+        }
+
+        public int Id
+        {
+            get;
+            set;
+        }
+    }
+}

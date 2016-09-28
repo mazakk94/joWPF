@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    interface IQuestion
+    public interface IQuestion
     {
-
+        int Id { get; set; }
+        int Points { get; set; }
+        string Content { get; set; }        
+        List<Tuple<string, bool>> Answer { get; set; }
+        
+        //BitmapImage Image { get; set; }
     }
 }

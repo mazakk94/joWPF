@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E005F689-046F-4550-AF8C-AA43A3805722}</ProjectGuid>
+    <ProjectGuid>{A9DFDD6D-7D30-40AB-8327-A995853874B6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Interfaces</RootNamespace>
-    <AssemblyName>Interfaces</AssemblyName>
+    <RootNamespace>DataAccessObject</RootNamespace>
+    <AssemblyName>DataAccessObject</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,15 +39,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IAnsweredQuestion.cs" />
-    <Compile Include="IHistory.cs" />
-    <Compile Include="IProducer.cs" />
-    <Compile Include="ICar.cs" />
-    <Compile Include="IDAO.cs" />
-    <Compile Include="IQuestion.cs" />
-    <Compile Include="IUser.cs" />
+    <Compile Include="DataObjects\AnsweredQuestion.cs" />
+    <Compile Include="DataObjects\Car.cs" />
+    <Compile Include="DataObjects\History.cs" />
+    <Compile Include="DataObjects\Producer.cs" />
+    <Compile Include="DAO.cs" />
+    <Compile Include="DataObjects\Question.cs" />
+    <Compile Include="DataObjects\Test.cs" />
+    <Compile Include="DataObjects\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ITest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{e005f689-046f-4550-af8c-aa43a3805722}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

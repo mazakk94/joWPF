@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    public interface IUser
+    public interface ITest
     {
+        int Id { get; set; }
         string Name { get; set; }
-        string Password { get; set; }
-        bool Type { get; set; } //0 - user, 1 - editor
+        TimeSpan Length { get; set; }
+        int MaximumPoints { get; set; }
+        List<IQuestion> Questions { get; set; }        
     }
 }
