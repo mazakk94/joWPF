@@ -27,12 +27,12 @@ namespace DataAccessObject.DataObjects
             set;
         }
 
-        public List<IQuestion> Questions
+        public List<IQuestion> Question
         {
             get;
             set;
         }
-
+        
         public int Id
         {
             get;

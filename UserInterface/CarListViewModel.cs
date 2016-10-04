@@ -52,6 +52,9 @@ namespace UserInterface
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
+        /*
+         
+         */
 
         private void RaisePropertyChanged(string propertyName)
         {

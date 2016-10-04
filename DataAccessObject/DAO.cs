@@ -1,4 +1,5 @@
-﻿using Interfaces;
+﻿using DataAccessObject.DataObjects;
+using Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,16 @@ namespace DataAccessObject
 
         private List<IProducer> _producers;
         private List<ICar> _cars;
+
+
+
+        private List<IAnsweredQuestion> _answeredQuestions;
+        private List<IHistory> _histories;
+        private List<IQuestion> _questions;
+        private List<ITest> _tests;
+        private List<IUser> _users;
+
+
         
         public DAO()
         {
@@ -32,7 +43,7 @@ namespace DataAccessObject
                 new DataObjects.Car() { CarID = 5, Name = "Polo5", Producer = _producers[1], Price = 45, Color = "Red"}
                 
             };
-            /*
+            
             _questions = new List<IQuestion>()
             {
                 new DataObjects.Question() 
@@ -45,13 +56,25 @@ namespace DataAccessObject
                     }
                 }
                 
+
+
+
             };
             
             _tests = new List<ITest>()
             {
-                new DataObjects.Test() { Name = "Pokemon Test", Length = new TimeSpan(1, 0, 0), MaximumPoints = 10, Questions = { _questions[0] } }
+                new DataObjects.Test() { Name = "Pokemon Test", Length = new TimeSpan(1, 0, 0), MaximumPoints = 10, 
+                    Question = new List<IQuestion>()
+                    {
+                        _questions[0]
+                    }
+
+                }
             };
-            */
+
+
+
+
         }
 
         public IEnumerable<IProducer> GetAllProducers()
@@ -78,12 +101,6 @@ namespace DataAccessObject
 
 
 
-       
-        private List<IAnsweredQuestion> _answeredQuestions;
-        private List<IHistory> _histories;
-        private List<IQuestion> _questions;
-        private List<ITest> _tests;
-        private List<IUser> _users;
 
 
         public IEnumerable<IAnsweredQuestion> GetAllAnsweredQuestions()

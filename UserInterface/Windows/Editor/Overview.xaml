@@ -3,13 +3,17 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:UserInterface"
         Title="Overview" Height="480" Width="640">
-    
-    
+
+
     <Window.DataContext>
         <local:CarListViewModel/>
     </Window.DataContext>
     
+<!--
     
+        <local:QuestionListViewModel/>
+    <local:CarListViewModel/>
+-->    
     
     
     <DockPanel> <!--LastChildFill=" True"-->
@@ -39,11 +43,33 @@
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            <Label Content="{Binding CarID}" />                            
+                            <Label Content="{Binding CarID}" />
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
+
+
+            <ListBox Name="lstBox2" ItemsSource="{Binding }" Grid.Row="1" Grid.Column="1" >
+                <ListBox.GroupStyle>
+                    <GroupStyle>
+                        <GroupStyle.HeaderTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=Name}" FontWeight="Bold"
+                                       Foreground="White" Background="Black" Margin="2"/>
+                            </DataTemplate>
+                        </GroupStyle.HeaderTemplate>
+                    </GroupStyle>
+                </ListBox.GroupStyle>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="{Binding CarID}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
             <!--Label  Grid.Row="0" Grid.Column="2"  Content="{Binding CarID}" HorizontalAlignment="Center" VerticalAlignment="Center"/-->
 
             <Label  Grid.Row="0" Grid.Column="2" Content="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}" 
