@@ -2,8 +2,3 @@ C:\Users\student\Downloads\MVVM\Validators\bin\Debug\Validators.dll
 C:\Users\student\Downloads\MVVM\Validators\bin\Debug\Validators.pdb
 C:\Users\student\Downloads\MVVM\Validators\obj\Debug\Validators.dll
 C:\Users\student\Downloads\MVVM\Validators\obj\Debug\Validators.pdb
-C:\Users\Mazi\Documents\Visual Studio 2013\siszarpProjects\joWpf\Validators\bin\Debug\Validators.dll
-C:\Users\Mazi\Documents\Visual Studio 2013\siszarpProjects\joWpf\Validators\bin\Debug\Validators.pdb
-C:\Users\Mazi\Documents\Visual Studio 2013\siszarpProjects\joWpf\Validators\obj\Debug\Validators.csprojResolveAssemblyReference.cache
-C:\Users\Mazi\Documents\Visual Studio 2013\siszarpProjects\joWpf\Validators\obj\Debug\Validators.dll
-C:\Users\Mazi\Documents\Visual Studio 2013\siszarpProjects\joWpf\Validators\obj\Debug\Validators.pdb

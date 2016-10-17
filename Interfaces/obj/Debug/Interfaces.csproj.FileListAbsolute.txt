@@ -6,7 +6,3 @@ C:\Users\student\Downloads\MVVM\Interfaces\bin\Debug\Interfaces.dll
 C:\Users\student\Downloads\MVVM\Interfaces\bin\Debug\Interfaces.pdb
 C:\Users\student\Downloads\MVVM\Interfaces\obj\Debug\Interfaces.dll
 C:\Users\student\Downloads\MVVM\Interfaces\obj\Debug\Interfaces.pdb
-C:\Users\Mazi\Documents\Visual Studio 2013\siszarpProjects\joWpf\Interfaces\obj\Debug\Interfaces.dll
-C:\Users\Mazi\Documents\Visual Studio 2013\siszarpProjects\joWpf\Interfaces\bin\Debug\Interfaces.dll
-C:\Users\Mazi\Documents\Visual Studio 2013\siszarpProjects\joWpf\Interfaces\bin\Debug\Interfaces.pdb
-C:\Users\Mazi\Documents\Visual Studio 2013\siszarpProjects\joWpf\Interfaces\obj\Debug\Interfaces.pdb
