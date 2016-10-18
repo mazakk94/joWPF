@@ -11,6 +11,9 @@ namespace Interfaces
         IEnumerable<IProducer> GetAllProducers();
         IEnumerable<ICar> GettAllCars();
 
+        IEnumerable<IQuestion> GetAllQuestions();
+        IQuestion CreateNewQuestion();
+        void AddQuestion(IQuestion question);
         //IEnumerable<IUser> GetAllUsers();
         //IUser CreateNewUser();
 

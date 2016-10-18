@@ -6,16 +6,14 @@
 
 
     <Window.DataContext>
-        <local:CarListViewModel/>
-    </Window.DataContext>
-    
-<!--
-    
         <local:QuestionListViewModel/>
+    </Window.DataContext>
+
+ <!--    
+    <local:QuestionListViewModel/>
     <local:CarListViewModel/>
--->    
-    
-    
+-->
+        
     <DockPanel> <!--LastChildFill=" True"-->
         <Grid DockPanel.Dock="Top">
             <Grid.ColumnDefinitions>
@@ -50,7 +48,7 @@
             </ListBox>
 
 
-            <ListBox Name="lstBox2" ItemsSource="{Binding }" Grid.Row="1" Grid.Column="1" >
+            <ListBox Name="lstBox2" ItemsSource="{Binding Questions}" Grid.Row="1" Grid.Column="1" >
                 <ListBox.GroupStyle>
                     <GroupStyle>
                         <GroupStyle.HeaderTemplate>
@@ -64,7 +62,7 @@
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            <Label Content="{Binding CarID}" />
+                            <Label Content="{Binding Content }" />
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>

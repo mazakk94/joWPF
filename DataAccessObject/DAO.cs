@@ -52,10 +52,19 @@ namespace DataAccessObject
                     { 
                         new Tuple<string, bool>("Electabuzz", false), 
                         new Tuple<string, bool>("Zapdos", false), 
-                        new Tuple<string, bool>("Pikachu", false)
+                        new Tuple<string, bool>("Pikachu", true)
+                    }
+                },
+                
+                new DataObjects.Question() 
+                { 
+                    Id = 1, Content = "Name of main character?", Points = 1, Answer = new List<Tuple<string,bool>>
+                    { 
+                        new Tuple<string, bool>("Ash", true), 
+                        new Tuple<string, bool>("Brock", false), 
+                        new Tuple<string, bool>("Misty", false)
                     }
                 }
-                
 
 
 
@@ -135,6 +144,11 @@ namespace DataAccessObject
             return _users;
         }
 
+
+        public IQuestion CreateNewQuestion()
+        {
+            return new DataObjects.Question();
+        }
 
         public ITest CreateNewTest()
         {
