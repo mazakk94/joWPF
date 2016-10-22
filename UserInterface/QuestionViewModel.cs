@@ -47,6 +47,7 @@ namespace UserInterface
                 //RaisePropertyChanged("Coor");
             }
         }
+
         public List<Tuple<string, bool>> Answer
         {
             get { return _question.Answer; }

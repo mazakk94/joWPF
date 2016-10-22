@@ -61,8 +61,12 @@
                 </ListBox.GroupStyle>
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <Label Content="{Binding Content }" />
+                        <StackPanel Orientation="Vertical">
+                            <Label Content="{Binding Answer[0].Item1 }" />
+                            <Label Content="{Binding Answer[1].Item1 }" />
+                            <Label Content="{Binding Answer[2].Item1 }" />
+                            <Label Content="{Binding Answer[3].Item1 }" />
+                            <Label Content="{Binding Answer[4].Item1 }" />
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>

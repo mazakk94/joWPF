@@ -61,7 +61,8 @@ namespace DataAccessObject
                     Id = 1, Content = "Name of main character?", Points = 1, Answer = new List<Tuple<string,bool>>
                     { 
                         new Tuple<string, bool>("Ash", true), 
-                        new Tuple<string, bool>("Brock", false), 
+                        new Tuple<string, bool>("Brock", false),
+                        new Tuple<string, bool>("Giovanni", false), 
                         new Tuple<string, bool>("Misty", false)
                     }
                 }
