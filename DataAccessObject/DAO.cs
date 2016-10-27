@@ -13,8 +13,7 @@ namespace DataAccessObject
 
         private List<IProducer> _producers;
         private List<ICar> _cars;
-
-
+        
 
         private List<IAnsweredQuestion> _answeredQuestions;
         private List<IHistory> _histories;
@@ -65,6 +64,16 @@ namespace DataAccessObject
                         new Tuple<string, bool>("Giovanni", false), 
                         new Tuple<string, bool>("Misty", false)
                     }
+                },
+                
+                new DataObjects.Question() 
+                { 
+                    Id = 2, Content = "Is it possible to turn right on red?", Points = 1, Answer = new List<Tuple<string,bool>>
+                    { 
+                        new Tuple<string, bool>("Yes, always", false), 
+                        new Tuple<string, bool>("Never", false),
+                        new Tuple<string, bool>("Yes, but only if there's a green arrow", false)
+                    }
                 }
 
 
@@ -73,10 +82,19 @@ namespace DataAccessObject
             
             _tests = new List<ITest>()
             {
-                new DataObjects.Test() { Name = "Pokemon Test", Length = new TimeSpan(1, 0, 0), MaximumPoints = 10, 
+                new DataObjects.Test() { Id = 0, Name = "Pokemon Test", Length = new TimeSpan(1, 0, 0), MaximumPoints = 10, 
+                    QuestionsIds = new List<int>(){ 0, 1 }, 
                     Question = new List<IQuestion>()
                     {
-                        _questions[0]
+                        _questions[0], _questions[1]
+                    }
+
+                }, 
+                new DataObjects.Test() { Id = 1, Name = "Driver's Test", Length = new TimeSpan(1, 15, 0), MaximumPoints = 18, 
+                    QuestionsIds = new List<int>(){ 2 }, 
+                    Question = new List<IQuestion>()
+                    {
+                        _questions[2]
                     }
 
                 }
@@ -98,7 +116,6 @@ namespace DataAccessObject
         }
 
 
-
         public ICar CreateNewCar()
         {
             return new DataObjects.Car();
@@ -110,9 +127,6 @@ namespace DataAccessObject
         }
 
 
-
-
-
         public IEnumerable<IAnsweredQuestion> GetAllAnsweredQuestions()
         {
             return _answeredQuestions;
@@ -122,7 +136,7 @@ namespace DataAccessObject
         {
             return _histories;
         }
-
+        
         public IEnumerable<IQuestion> GetAllQuestions()
         {
             return _questions;
@@ -133,12 +147,17 @@ namespace DataAccessObject
             return _tests;
         }
 
-        /*
+        public IQuestion GetQuestion(int questionId)
+        {
+            return _questions.Find(x => x.Id == questionId);
+        }
+
+        
         public ITest GetTest(int id)
         {
-            return _tests.Where(test => test.Id == id);
+            return _tests.Find(test => test.Id == id);
         }
-         * */
+        
 
         public IEnumerable<IUser> GetAllUsers()
         {
@@ -172,5 +191,45 @@ namespace DataAccessObject
         }
 
 
+
+        IEnumerable<IProducer> IDAO.GetAllProducers()
+        {
+            throw new NotImplementedException();
+        }
+
+        IEnumerable<ICar> IDAO.GettAllCars()
+        {
+            throw new NotImplementedException();
+        }
+
+        IEnumerable<ITest> IDAO.GetAllTests()
+        {
+            return GetAllTests();
+        }
+
+        IEnumerable<IQuestion> IDAO.GetAllQuestions()
+        {
+            return GetAllQuestions();
+        }
+
+        ITest IDAO.CreateNewTest()
+        {
+            throw new NotImplementedException();
+        }
+
+        void IDAO.AddTest(ITest test)
+        {
+            throw new NotImplementedException();
+        }
+
+        ICar IDAO.CreateNewCar()
+        {
+            throw new NotImplementedException();
+        }
+
+        void IDAO.AddCar(ICar car)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

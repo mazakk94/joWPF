@@ -68,5 +68,12 @@ namespace DataAccessObject.DataObjects
             get;
             set;
         }
+
+
+        public List<int> QuestionsIds
+        {
+            get;
+            set;
+        }
     }
 }

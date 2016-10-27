@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -53,9 +54,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="QuestionListViewModel.cs" />
-    <Compile Include="QuestionViewModel.cs" />
+    <Compile Include="TestListViewModel.cs" />
+    <Compile Include="TestViewModel.cs" />
     <Compile Include="RelayCommand.cs" />
+    <Compile Include="Windows\Editor\Dialogs\Create.xaml.cs">
+      <DependentUpon>Create.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Editor\Overview.xaml.cs">
       <DependentUpon>Overview.xaml</DependentUpon>
     </Compile>
@@ -72,6 +76,10 @@
     </Compile>
     <Compile Include="CarListViewModel.cs" />
     <Compile Include="CarViewModel.cs" />
+    <Page Include="Windows\Editor\Dialogs\Create.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\Editor\Overview.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

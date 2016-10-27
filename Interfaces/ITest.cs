@@ -12,6 +12,7 @@ namespace Interfaces
         string Name { get; set; }
         TimeSpan Length { get; set; }
         int MaximumPoints { get; set; }
-        List<IQuestion> Question { get; set; }        
+        List<IQuestion> Question { get; set; }
+        List<int> QuestionsIds { get; set; }
     }
 }
