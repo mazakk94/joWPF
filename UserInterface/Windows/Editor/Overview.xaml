@@ -23,12 +23,16 @@
                 <ColumnDefinition Width="0.5*" ></ColumnDefinition>                
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition ></RowDefinition>
+                <RowDefinition Height="0.5*"></RowDefinition>
                 <RowDefinition ></RowDefinition>
                 <RowDefinition ></RowDefinition>
                 <RowDefinition ></RowDefinition>
             </Grid.RowDefinitions>
-            
+
+            <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" Grid.Row="0" Grid.Column="1" Margin="0 10">
+                <Button Command="{Binding CreateNewTestCommand}" Content="Create New Test" />
+            </StackPanel>
+
             <ListBox Name="lstBox" SelectedIndex="{Binding Index}" 
                      ItemsSource="{Binding Tests}" Grid.Row="1" Grid.Column="1" >
                 <ListBox.GroupStyle>
@@ -54,6 +58,7 @@
 <!--
     <ListBox Name="lstBox2" ItemsSource="{Binding Tests[0].Question}" Grid.Row="1" Grid.Column="1" >
 -->
+            
             <ListBox Name="lstBox2" ItemsSource="{Binding Questions}" Grid.Row="2" Grid.Column="1" >
                 <ListBox.GroupStyle>
                     <GroupStyle>
